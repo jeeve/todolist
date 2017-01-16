@@ -47,7 +47,7 @@ on en crée une vide sous forme d'array avant la suite */
 
 //.listen(process.env.PORT || 8080, '127.0.0.1');   
 
-var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+var server_port = process.env.YOUR_PORT || process.env.PORT || 8080;
 var server_host = process.env.YOUR_HOST || '0.0.0.0';
 app.listen(server_port, server_host, function() {
     console.log('Listening on port %d', server_port);
