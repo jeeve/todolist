@@ -17,7 +17,7 @@ on en crée une vide sous forme d'array avant la suite */
     next();
 })
 
-.use(express.static('/public'))
+.use(express.static('public'))
 
 /* On affiche la todolist et le formulaire */
 .get('/', function(req, res) { 
