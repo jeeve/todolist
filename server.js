@@ -17,8 +17,6 @@ on en crée une vide sous forme d'array avant la suite */
     next();
 })
 
-.use(express.static('/images'))
-
 /* On affiche la todolist et le formulaire */
 .get('/', function(req, res) { 
     res.render('lesquinte2017.ejs', {todolist: req.session.todolist});
