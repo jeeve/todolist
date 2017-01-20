@@ -19,7 +19,7 @@ on en crée une vide sous forme d'array avant la suite */
 
 /* On affiche la todolist et le formulaire */
 .get('/', function(req, res) { 
-    res.render('lesquinte.ejs', {todolist: req.session.todolist});
+    res.render('lesquinte2017.ejs', {todolist: req.session.todolist});
 });
 
 
