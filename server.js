@@ -22,11 +22,11 @@ on en crée une vide sous forme d'array avant la suite */
 /* On affiche la todolist et le formulaire */
 .get('/', function(req, res) { 
     res.render('lesquinte2017.ejs', {todolist: req.session.todolist});
+})
+.get('/lesquinte2017.html', function(req, res) {
+    res.render('lesquinte2017.ejs', {todolist: req.session.todolist});
 });
-
-
 //.listen(process.env.PORT || 8080, '127.0.0.1');   
-
 var server_port = process.env.YOUR_PORT || process.env.PORT || 8080;
 var server_host = process.env.YOUR_HOST || '0.0.0.0';
 app.listen(server_port, server_host, function() {
